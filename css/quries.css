@@ -1,0 +1,103 @@
+@media (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+@media (max-width: 992px) {
+  html {
+    font-size: 50%;
+  }
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-content {
+    width: 100%;
+  }
+  .testimonial-title {
+    width: 100%;
+  }
+    .video-section {
+    min-height: 0;
+    height: auto;
+  }
+  .pricing-section{
+    min-height: 0;
+    height: auto;
+  }
+  .faq-section{
+    min-height: 0;
+    height: auto ;
+  }
+
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 43.75%;
+  }
+  .video-title {
+    width: 100%;
+  }
+  .hero-section {
+    margin: 4rem 0 3rem;
+    background-image: url("/images/hero-bg-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 370px 400px;
+    background-position: bottom;
+    object-fit: cover;
+    height: 650px;
+  }
+  .hero-content {
+    text-align: center;
+  }
+  .hero-text {
+    width: 100%;
+  }
+  .hero-buttons {
+    justify-content: center;
+  }
+  .navbar .hamburger {
+    display: block;
+  }
+  .navbar .menu-main {
+    display: none;
+  }
+}
+@media (max-width: 578px) {
+  html {
+    font-size: 37.5%;
+  }
+  .text-h1 {
+    font-size: 36px;
+  }
+  .testimonial-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .pricing-cards {
+    flex-direction: column;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-card-item {
+    grid-column: 1/4;
+    grid-row: 4;
+  }
+  .footer .footer-grid .card {
+    margin-right: 0;
+  }
+  .logo {
+    width: 100px !important;
+  }
+  .navbar .mobile-menu-wrapper {
+    width: 210px;
+  }
+    .hero-section {
+    background-size: 290px 350px;
+  }
+}
