@@ -210,11 +210,9 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
   margin: 5rem 0;
   padding: 0 1.5rem;
   gap: 25px;
-  display: none;
 }
 .navbar .mobile-menu-wrapper .mobile-menu li a {
   color: var(--black-color);
@@ -328,9 +326,7 @@ p {
 .pricing-section .pricing-cards {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  gap: 3rem;
   margin: 2rem 0;
 }
 .pricing-section .pricing-card {
@@ -338,6 +334,8 @@ p {
   border-radius: 12px;
   display: flex;
   flex-direction: column;
+  background-color: var(--white-color);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   gap: 1rem;
 }
 .pricing-section .pricing-card.pro {
