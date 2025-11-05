@@ -67,9 +67,6 @@
   }
 }
 @media (max-width: 578px) {
-  html {
-    font-size: 37.5%;
-  }
   .footer-parent .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
