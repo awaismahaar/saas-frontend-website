@@ -2,7 +2,7 @@
   html {
     font-size: 56.25%;
   }
-  .footer-grid {
+  .footer-parent .footer-grid {
     grid-template-columns: 2fr 1fr 1fr;
   }
 }
@@ -10,37 +10,28 @@
   html {
     font-size: 50%;
   }
-  .testimonial-grid {
+  .testimonial-section .testimonial-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .footer-grid {
+  .testimonial-section .testimonial-title {
+    width: 100%;
+  }
+  .footer-parent .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
-  .hero-content {
-    width: 100%;
-  }
-  .testimonial-title {
-    width: 100%;
-  }
-    .video-section {
+  .hero-content,
+  .video-section,
+  .pricing-section,
+  .faq-section {
     min-height: 0;
     height: auto;
   }
-  .pricing-section{
-    min-height: 0;
-    height: auto;
-  }
-  .faq-section{
-    min-height: 0;
-    height: auto ;
-  }
-
 }
 @media (max-width: 768px) {
   html {
     font-size: 43.75%;
   }
-  .video-title {
+  .video-section .video-title {
     width: 100%;
   }
   .hero-section {
@@ -49,16 +40,20 @@
     background-repeat: no-repeat;
     background-size: 370px 400px;
     background-position: bottom;
+    -o-object-fit: cover;
     object-fit: cover;
     height: 650px;
   }
-  .hero-content {
+  .hero-section .hero-content {
     text-align: center;
   }
-  .hero-text {
+  .hero-section .hero-text {
+    width: 100%;
+}
+  .hero-section .hero-content {
     width: 100%;
   }
-  .hero-buttons {
+  .hero-section .hero-content .hero-buttons {
     justify-content: center;
   }
   .navbar .hamburger {
@@ -75,21 +70,21 @@
   .text-h1 {
     font-size: 36px;
   }
-  .testimonial-grid {
+  .testimonial-section .testimonial-grid {
     grid-template-columns: repeat(1, 1fr);
   }
-  .pricing-cards {
+  .pricing-section .pricing-cards {
     flex-direction: column;
   }
-  .footer-grid {
+  .footer-parent .footer-grid {
     grid-template-columns: 1fr 1fr;
+  }
+  .footer-parent .footer-grid .card {
+    margin-right: 0;
   }
   .grid-card-item {
     grid-column: 1/4;
     grid-row: 4;
-  }
-  .footer .footer-grid .card {
-    margin-right: 0;
   }
   .logo {
     width: 100px !important;
@@ -97,7 +92,7 @@
   .navbar .mobile-menu-wrapper {
     width: 210px;
   }
-    .hero-section {
+  .hero-section {
     background-size: 290px 350px;
   }
-}
+} /*# sourceMappingURL=quries.css.map */

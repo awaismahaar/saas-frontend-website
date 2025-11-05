@@ -1,0 +1,137 @@
+// 🔹 Responsive Breakpoints
+$breakpoint-xl: 1200px;
+$breakpoint-lg: 992px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 578px;
+
+// 🔹 Media Queries
+@media (max-width: $breakpoint-xl) {
+  html {
+    font-size: 56.25%;
+  }
+  .footer-parent {
+    .footer-grid {
+      grid-template-columns: 2fr 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-lg) {
+  html {
+    font-size: 50%;
+  }
+  .testimonial-section {
+    .testimonial-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .testimonial-title {
+      width: 100%;
+    }
+  }
+  .footer-parent {
+    .footer-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .hero-content,
+  .video-section,
+  .pricing-section,
+  .faq-section {
+    min-height: 0;
+    height: auto;
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  html {
+    font-size: 43.75%;
+  }
+  .video-section {
+    .video-title {
+      width: 100%;
+    }
+  }
+
+  .hero-section {
+    margin: 4rem 0 3rem;
+    background: {
+      image: url("/images/hero-bg-mobile.png");
+      repeat: no-repeat;
+      size: 370px 400px;
+      position: bottom;
+    }
+    object-fit: cover;
+    height: 650px;
+    .hero-content {
+    text-align: center;
+
+    .hero-text {
+      width: 100%;
+    }
+
+    .hero-buttons {
+      justify-content: center;
+    }
+  }
+
+  }
+
+  
+  .navbar {
+    .hamburger {
+      display: block;
+    }
+
+    .menu-main {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  html {
+    font-size: 37.5%;
+  }
+
+  .text-h1 {
+    font-size: 36px;
+  }
+  .testimonial-section {
+    .testimonial-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .pricing-section {
+    .pricing-cards {
+      flex-direction: column;
+    }
+  }
+  .footer-parent {
+    .footer-grid {
+      grid-template-columns: 1fr 1fr;
+      .card {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .grid-card-item {
+    grid-column: 1 / 4;
+    grid-row: 4;
+  }
+
+  .logo {
+    width: 100px !important;
+  }
+
+  .navbar {
+    .mobile-menu-wrapper {
+      width: 210px;
+    }
+  }
+
+  .hero-section {
+    background-size: 290px 350px;
+  }
+}
