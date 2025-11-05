@@ -70,6 +70,9 @@
   .footer-parent .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
+  .hero-section{
+    margin: 2rem 0;
+  }
 }
 @media (max-width: 450px) {
   .text-h1 {
@@ -97,6 +100,6 @@
   }
   .hero-section {
     background-size: 315px 370px;
-    height: 600px;
+    height: 620px;
   }
 } /*# sourceMappingURL=quries.css.map */
